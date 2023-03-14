@@ -53,11 +53,34 @@
 <main>
   <div class="container-fluid h-100 debug">
     <div class="row h-100">
-      <div class="col-2 col-xl-1 debug">
-        Aside
+      <div class="col-2 col-sm-1 d-flex flex-column justify-content-between"> <!--Aside -->
+        
+        <div class="top-aside h-25">
+          <div class="container h-100 ">
+            <div class="row-cols-1 d-flex">
+              <div class="col col-xl-4 fs-4 text-white">
+                <ul class="list-unstyled">
+                  <li><i class="fa-solid fa-house"></i></li>
+                  <li><i class="fa-solid fa-chart-simple"></i></li>
+                  <li><i class="fa-solid fa-signal"></i></li>
+                </ul>
+              </div>
+              <div class="col d-none d-xl-block col-xl-8 fs-4 text-white">
+                <ul class="list-unstyled px-2">
+                  <li>Home</li>
+                  <li>Stats</li>
+                  <li>Signal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-aside debug-2">bottom aside</div>
+
       </div>
 
-      <div class="col-10 col-xl-11 p-0 debug">
+      <div class="col-10 col-sm-11 p-0 debug"><!--Content-->
 
         <div class="container-fluid bg-primary">
           <div class="row-cols-1 d-flex flex-wrap">
