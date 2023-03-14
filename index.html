@@ -14,79 +14,69 @@
 </head>
 <body>
 
-  <header>
-    <div class="mm-top-bar d-flex align-items-center">
-      <div class="container-fluid h-100 bg-white">
-        <div class="row h-100 d-flex align-items-center">
-  
-          <div class="col-2 h-100 align-items-center d-flex debug-2">
-            <picture class="logo-header">
-              logo
-              <!-- <img src="img/mobile-logo.png" alt="" class="debug"> -->
-            </picture>
-          </div>
-  
-          <div class="col-8 h-100 align-items-center d-flex debug-2 debug">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </div>
-  
-          <div class="col-2 h-100 align-items-center d-flex debug-2 debug-2">
-            <div class="row ">
-              <div class="col">buttons</div>
-              <div class="col">bells</div>
-  
-            </div>
-          
-          </div>
-  
+<header>
+    <div class="container-fluid h-100 bg-danger align-items-center">
+      <div class="row h-100 d-flex align-items-center bg-white">
+
+        <div class="col-2 h-100 align-items-center d-flex"> <!--logo-->
+          <picture class="logo-container">
+            <source media="(max-width: 1200px)" srcset="img/mobile-logo.png">
+            <img src="img/logo.svg" alt="Logo boolean">
+          </picture>
         </div>
-  
+
+        <div class="col-8 h-100 align-items-center d-flex"> <!--Search-bar-->
+          <input class="form-control me-2" type="search" placeholder="Prova a cercare : Lezioni di laravel" aria-label="Search">
+        </div>
+
+        <div class="col-2 h-100 align-items-center d-flex"> <!--Bells + button -->
+          <div class="row w-100 d-flex justify-content-end align-items-center">
+
+            <div class="col-xl-8 d-none d-xl-block">
+              <ul class="d-flex gap-3 list-unstyled">
+                <li><i class="fa-solid fa-list-ul"></i></li>
+                <li><i class="fa-solid fa-circle-question"></i></li>
+                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+              </ul>
+            </div> <!--button-->
+
+            <div class="col-4 text-end"> <!--bell-->
+              <i class="fa-solid fa-bell text-warning fs-2"></i>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
-  </header>
+</header>
 
 <main>
-  <div class="mm-main-wrapper d-flex">
-    <div class="container-fluid">
-      <div class="row h-100"> <!--contiene aside e main-->
-
-
-        <div class="col-2 col-xl-1">  <!-- aside -->
-          
-          <div class="row h-100 flex-column debug">
-            <div class="col aside-top debug">
-              icons
-            </div>
-            <div class="col debug">
-              <span>admin</span>
-            </div>
-          </div>
-
-        </div> <!-- aside -->
-        
-        <div class="col-10 col-xl-11 overflow-y-scroll debug"> <!-- main content -->
-
-          <div class="container-fluid bg-primary">
-            <div class="row-cols-1 row-cols-md-3 d-flex flex-wrap">
-              <div class="col debug">prima info</div>
-              <div class="col debug">seconda info</div>
-              <div class="col debug">terza info</div>
-            </div>
-          </div>
-          
-          <div class="row-cols-1 h-100 d-flex flex-wrap debug">
-            <div class="col-xl-8 debug">prossime classi</div>
-            <div class="col-xl-4 debug">todo</div>
-            <div class="col-xl-8 debug ">faq</div>
-            <div class="col-xl-4 debug">grafico</div>
-
-          </div>
-        </div> <!-- main content -->
-        
+  <div class="container-fluid h-100 debug">
+    <div class="row h-100">
+      <div class="col-2 col-xl-1 debug">
+        Aside
       </div>
 
+      <div class="col-10 col-xl-11 p-0 debug">
+
+        <div class="container-fluid bg-primary">
+          <div class="row-cols-1 d-flex flex-wrap">
+            <div class="col col-xl-4 debug">Nuovo Studente</div>
+            <div class="col col-xl-4 debug">Boolean + badge</div>
+            <div class="col col-xl-4 debug">Studenti online</div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-warning overflow-y-scroll">
+          <div class="row-cols-1">
+            <div class="col debug">prossime classi</div>
+            <div class="col debug">Faq</div>
+            <div class="col debug">todo</div>
+            <div class="col debug">grafico</div>
+          </div>
+        </div>
+      </div>
     </div>
-  
   </div>
 </main>
 

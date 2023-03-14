@@ -14,31 +14,26 @@ img {
   width: 100%;
 }
 
-.mm-top-bar {
-  height: 10vh;
+/* END UTILITIES */
+
+/* start page layout */
+header {
+  height: 70px;
   background-color: rgb(248, 249, 250);
 }
 
-.logo-header {
+main {
+  height: calc(100vh - 70px);
+}
+/* end page layout */
+
+/* start header style */
+
+picture img {
+  height: 70px;
+  object-fit: contain;
 }
 
+/* end header style */
 
 
-
-/* MAIN */
-
-.mm-main-wrapper {
-  height: calc(100vh - 10vh);
-}
-
-.mm-aside {
-  width: 75px;
-}
-
-.aside-top ul li {
-  list-style: none;
-}
-
-.mm-main-content {
-  width: calc(100vw - 75px);
-}
