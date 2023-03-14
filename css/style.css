@@ -1,4 +1,44 @@
-h1 {
-text-decoration: underline;
-text-transform: uppercase;
+.debug {
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 1px solid black;
+  min-height: 30px;
+}
+
+.debug-2 {
+  background-color: rgba(0, 0, 255, 0.2);
+  border: 1px solid black;
+  min-height: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.mm-top-bar {
+  height: 10vh;
+  background-color: rgb(248, 249, 250);
+}
+
+.logo-header {
+}
+
+
+
+
+/* MAIN */
+
+.mm-main-wrapper {
+  height: calc(100vh - 10vh);
+}
+
+.mm-aside {
+  width: 75px;
+}
+
+.aside-top ul li {
+  list-style: none;
+}
+
+.mm-main-content {
+  width: calc(100vw - 75px);
 }
