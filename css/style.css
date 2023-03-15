@@ -41,19 +41,18 @@ picture img {
   #aside {
     background-color: rgb(5, 30, 52);
     color: white;
-    width: 100px;
+    width: 70px;
     height: calc(100vh - 70px);
   }
 
   .main-content {
-    background-color: antiquewhite;
     width: 100%;
-    height:  calc(100vh - 70px); ;
+    height:  calc(100vh - 70px); /*da revisionare*/
   }
 
   @media screen and (min-width:992px) {
   #aside {
-    width: 200px;
+    width: 150px;
   }
   }
 
