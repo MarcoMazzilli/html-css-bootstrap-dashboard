@@ -15,24 +15,24 @@
 <body>
 
 <header>
-    <div class="container-fluid h-100 bg-danger align-items-center">
-      <div class="row h-100 d-flex align-items-center bg-white">
+    <div class="container-fluid h-100 py-2">
+      <div class="row align-items-center bg-white">
 
         <div class="col-2 h-100 align-items-center d-flex"> <!--logo-->
           <picture class="logo-container">
-            <source media="(max-width: 1200px)" srcset="img/mobile-logo.png">
+            <source media="(max-width: 992px)" srcset="img/mobile-logo.png">
             <img src="img/logo.svg" alt="Logo boolean">
           </picture>
         </div>
 
         <div class="col-8 h-100 align-items-center d-flex"> <!--Search-bar-->
-          <input class="form-control me-2" type="search" placeholder="Prova a cercare : Lezioni di laravel" aria-label="Search">
+          <input class="form-control" type="search" placeholder="Prova a cercare : Lezioni di laravel" aria-label="Search">
         </div>
 
-        <div class="col-2 h-100 align-items-center d-flex"> <!--Bells + button -->
-          <div class="row w-100 d-flex justify-content-end align-items-center">
+        <div class="col-2 h-100"> <!--Bells + button -->
+          <div class="row h-100 d-flex justify-content-end align-items-center">
 
-            <div class="col-xl-8 d-none d-xl-block">
+            <div class="col-xl-4 d-none d-xl-block align-items-center">
               <ul class="d-flex gap-3 list-unstyled">
                 <li><i class="fa-solid fa-list-ul"></i></li>
                 <li><i class="fa-solid fa-circle-question"></i></li>
@@ -51,55 +51,44 @@
 </header>
 
 <main>
-  <div class="container-fluid h-100 debug">
-    <div class="row h-100">
-      <div class="col-2 col-sm-1 d-flex flex-column justify-content-between"> <!--Aside -->
-        
-        <div class="top-aside h-25">
-          <div class="container h-100 ">
-            <div class="row-cols-1 d-flex">
-              <div class="col col-xl-4 fs-4 text-white">
-                <ul class="list-unstyled">
-                  <li><i class="fa-solid fa-house"></i></li>
-                  <li><i class="fa-solid fa-chart-simple"></i></li>
-                  <li><i class="fa-solid fa-signal"></i></li>
-                </ul>
+  <div class="main-wrapper d-flex"> 
+    
+    <!--aside-->
+    <div class="aside" id="aside">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 "> 
+            <div class="container px-0 py-3"> <!--icone top-->
+              <div class="row text-center my-2 fs-3">
+                <div class="col col-lg-3 "><i class="fa-solid fa-house"></i></div>
+                <div class="col-lg-9 d-none d-lg-block text-start">Home</div>
               </div>
-              <div class="col d-none d-xl-block col-xl-8 fs-4 text-white">
-                <ul class="list-unstyled px-2">
-                  <li>Home</li>
-                  <li>Stats</li>
-                  <li>Signal</li>
-                </ul>
+              <div class="row text-center my-2 fs-3">
+                <div class="col col-lg-3 "><i class="fa-solid fa-chart-simple"></i></i></div>
+                <div class="col-lg-9 d-none d-lg-block text-start">Stats</div>
+              </div>
+              <div class="row text-center my-2 fs-3">
+                <div class="col col-lg-3 "><i class="fa-solid fa-signal"></i></div>
+                <div class="col-lg-9 d-none d-lg-block text-start">Signals</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12"> <!--icone bottom-->
+            <div class="container h-100 d-flex align-items-end justify-content-center px-0 py-3"> 
+              <div class="row text-center my-2 fs-3">
+                <div class="col col-lg-3 "><i class="fa-solid fa-gear"></i></div>
+                <div class="col-lg-9 d-none d-lg-block text-start">Settings</div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="bottom-aside debug-2">bottom aside</div>
-
       </div>
-
-      <div class="col-10 col-sm-11 p-0 debug"><!--Content-->
-
-        <div class="container-fluid bg-primary">
-          <div class="row-cols-1 d-flex flex-wrap">
-            <div class="col col-xl-4 debug">Nuovo Studente</div>
-            <div class="col col-xl-4 debug">Boolean + badge</div>
-            <div class="col col-xl-4 debug">Studenti online</div>
-          </div>
-        </div>
-
-        <div class="container-fluid bg-warning overflow-y-scroll">
-          <div class="row-cols-1">
-            <div class="col debug">prossime classi</div>
-            <div class="col debug">Faq</div>
-            <div class="col debug">todo</div>
-            <div class="col debug">grafico</div>
-          </div>
-        </div>
       </div>
-    </div>
+    <!--/aside--> 
+
+    <!-- main-content -->
+    <div class="main-content overflow-y-scroll">main content</div>
+  <!-- /main-content -->
   </div>
 </main>
 
