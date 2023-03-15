@@ -34,6 +34,10 @@ picture img {
   object-fit: contain;
 }
 
+.mm-top-banner-bg {
+  background-color: rgb(27, 114, 232);
+}
+
 /* end header style */
 
 /* start aside style */
