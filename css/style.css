@@ -42,6 +42,9 @@ picture img {
   border: none;
 }
 
+.offcanvas {
+  width: 100% !important;
+}
 /* end header style */
 
 /* start aside style */
@@ -63,6 +66,10 @@ picture img {
   @media screen and (min-width:992px) {
   #aside {
     width: 150px;
+  }
+
+  .offcanvas {
+    width: 40% !important;
   }
   }
 
