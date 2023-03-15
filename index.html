@@ -118,38 +118,42 @@
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <form class="row row-cols-2 g-3 needs-validation" novalidate>
+                  <form class="row row-cols-2 g-3">
 
-                    <div class="col-6 col-md-6">
+                    <div class="col-6 col-md-6"> <!--nome-->
                       <label for="validationCustom01" class="form-label">Nome</label>
                       <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Obbligatorio" required>
                     </div>
 
-                    <div class="col-6 col-md-6">
+                    <div class="col-6 col-md-6"> <!--cognome-->
                       <label for="validationCustom02" class="form-label">Cognome</label>
                       <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Obbligatorio" required>
-
                     </div>
-                    <div class="col-6 col-md-6">
+
+                    <div class="col-6 col-md-6"> <!--Email-->
                       <label for="validationCustomUsername" class="form-label">Email</label>
                       <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
                         <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="Inserisci la mail Principale">
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <label for="validationCustom03" class="form-label">Password</label> <!--cambiare input in mail-->
+
+                    <div class="col-md-6"> <!--Password-->
+                      <label for="validationCustom03" class="form-label">Password</label>
                       <input type="password" class="form-control" id="validationCustom03" placeholder="Inserire almeno un carattere speciale (!?$#@...) " required>
                     </div>
-                    <div class="col-12">
-                      <label for="validationCustom03" class="form-label">Indirizzo</label> <!--cambiare input in mail-->
+
+                    <div class="col-12"> <!--indirizzo-->
+                      <label for="validationCustom03" class="form-label">Indirizzo</label>
                       <input type="text" class="form-control" id="validationCustom03" placeholder="Inserire un indirizzo valido" required>
                     </div>
-                    <div class="col-md-6">
+
+                    <div class="col-md-6"> <!--città-->
                       <label for="validationCustom05" class="form-label">Citt&agrave;</label>
                       <input type="text" class="form-control" id="validationCustom05" required>
                     </div>
-                    <div class="col-4">
+
+                    <div class="col-4"> <!--Stato-->
                       <label for="validationCustom04" class="form-label">Stato</label>
                       <select class="form-select" id="validationCustom04" required>
                         <option selected disabled value="">Italia</option>
@@ -159,14 +163,17 @@
                         <option>USA</option>
                       </select>
                     </div>
-                    <div class="col-2">
+
+                    <div class="col-2"> <!--cap-->
                       <label for="validationCustom05" class="form-label">CAP</label>
                       <input type="text" class="form-control" id="validationCustom05" required>
                     </div>
-                    <div class="input-group">
+
+                    <div class="input-group"> <!--Selezione file-->
                       <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                     </div>
-                    <div class="col-12">
+
+                    <div class="col-12"> <!--Termini e condzioni-->
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                         <label class="form-check-label" for="invalidCheck">
@@ -174,10 +181,12 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-12">
+
+                    <div class="col-12"> <!--Input button-->
                       <button class="btn btn-primary" type="submit">Salva</button>
-                      <button type="button" class="btn btn-warning">Svuota</button>
+                      <button type="submit" class="btn btn-warning">Svuota</button>
                     </div>
+
                   </form>
                 </div>
               </div>
@@ -241,7 +250,7 @@
                               <th class="col">Azioni</th>
                             </tr>
                           </thead>
-                          <tbody> <!--tamble body-->
+                          <tbody> <!--table body-->
                             <tr class="text-center align-middle">
                               <td class="col-5 text-start"><i class="fa-solid fa-code text-white mm-icon-background rounded-circle p-2"></i> Classe 75</td>
                               <td class="col d-none d-md-table-cell">15 Febbraio 2021</td> 
