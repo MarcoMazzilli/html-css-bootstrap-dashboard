@@ -124,13 +124,37 @@
               <div class="container-fluid">
                 <div class="row row-cols-1 gap-3">
 
-                  <div id="classi" class="col"> <!--col classi-->
+                  <div id="classi" class="col "> <!--col classi-->
                     <div class="card"> 
                       <div class="card-header"> 
                           <h4 class="fw-semibold">Prossime classi</h4>
                       </div>
                       <div class="card-body">
-                        Qui va inserita la tabella
+                        <table class="table">
+                          <thead>
+                            <tr class="text-center">
+                              <th class="col-8 col-md-4 text-start">Nome</th>
+                              <th class="col-2 d-none d-md-inline">Data inizio</th> <!--problema-->
+                              <th class="col-2 d-none d-md-inline">ROI</th> <!--problema-->
+                              <th class="col-2">Stato</th>
+                              <th class="col-2">Azioni</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-center">
+                              <td class="col-8 col-md-5 text-start">Classe 75</td>
+                              <td class="col-auto d-none d-md-inline">22/10/2022</td>
+                              <td class="col-auto d-none d-md-inline">20%</td>
+                              <td class="col">
+                                <span class="badge text-bg-success">Done</span>
+                              </td>
+                              <td class="col">
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
