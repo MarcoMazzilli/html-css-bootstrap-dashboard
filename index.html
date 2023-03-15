@@ -109,7 +109,19 @@
 
             <div class="col-lg-3 d-flex py-3 py-md-0 align-items-center justify-content-xl-end order-md-3">
               <h4 class="me-3">Nuovo Studente</h4>
-              <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+              <!-- offcanvas-->
+              <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                ...
+                </div>
+              </div>
+              <!-- /offcanvas-->
             </div>
 
             <div class="col-lg-6 d-flex py-3 py-md-0 align-items-center ">
