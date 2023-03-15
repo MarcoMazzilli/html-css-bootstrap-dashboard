@@ -38,6 +38,10 @@ picture img {
   background-color: rgb(27, 114, 232);
 }
 
+.mm-dropdown-button:focus {
+  border: none;
+}
+
 /* end header style */
 
 /* start aside style */
