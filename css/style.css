@@ -36,6 +36,8 @@ picture img {
 
 /* end header style */
 
+/* start aside style */
+
   #aside {
     background-color: rgb(5, 30, 52);
     color: white;
@@ -46,6 +48,7 @@ picture img {
   .main-content {
     background-color: antiquewhite;
     width: 100%;
+    height:  calc(100vh - 70px); ;
   }
 
   @media screen and (min-width:992px) {
@@ -53,4 +56,15 @@ picture img {
     width: 200px;
   }
   }
+
+  /* end aside style */
+
+  /* start main style */
+
+  .mm-pills-color {
+    background-color:rgb(22, 91, 186) ;
+  }
+
+
+  /* end main style */
 
